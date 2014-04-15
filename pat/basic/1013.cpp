@@ -7,38 +7,38 @@ using namespace std;
 int
 main (void)
 {
-	int m, n;
+    int m, n;
 
-	while (cin >> m >> n)
-	{
-		vector<int> iv;
+    while (cin >> m >> n)
+    {
+        vector<int> iv;
 
-		iv.push_back (2);
-		for (vector<int>::size_type i = 3; (int) iv.size () < n; i += 2)
-		{
-			int sqr = (int) sqrt (i);
+        iv.push_back (2);
+        for (vector<int>::size_type i = 3; (int) iv.size () < n; i += 2)
+        {
+            int sqr = (int) sqrt (i);
 
-			bool isPrime = true;
+            bool isPrime = true;
 
-			for (vector<int>::size_type j = 0;
-				 j < iv.size () && iv[j] <= sqr; ++j)
-				if (i % iv[j] == 0)
-				{
-					isPrime = false;
-					break;
-				}
-			if (isPrime)
-				iv.push_back (i);
-		}
+            for (vector<int>::size_type j = 0;
+                    j < iv.size () && iv[j] <= sqr; ++j)
+                if (i % iv[j] == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            if (isPrime)
+                iv.push_back (i);
+        }
 
-		const string s = "         \n";
+        const string s = "         \n";
 
-		int i, j;
+        int i, j;
 
-		for (i = m - 1, j = 0; i < n - 1; ++i)
-			cout << iv[i] << s[j++ % 10];
+        for (i = m - 1, j = 0; i < n - 1; ++i)
+            cout << iv[i] << s[j++ % 10];
 
-		cout << iv[i] << endl;
-	}
-	return 0;
+        cout << iv[i] << endl;
+    }
+    return 0;
 }
