@@ -7,8 +7,8 @@ using namespace std;
 class Type
 {
   public:
-	int count;
-	int toPrint;				// to print on screen, the meaning varies
+	int count;	// forget about the encapsulation now!
+	int toPrint; // to print on screen, the meaning varies
 	  Type ():count (0), toPrint (0)
 	{
 	}
