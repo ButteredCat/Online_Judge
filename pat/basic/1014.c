@@ -39,7 +39,10 @@ main (void)
 	for (i = 0; i < length; ++i)
 	{
 		if (s[2][i] == s[3][i] && (islower (s[2][i]) || isupper (s[2][i])))
+		{
 			minute = i;
+			break;
+		}
 	}
 
 	printf ("%s %.2d:%.2d\n", week[day], hour, minute);
