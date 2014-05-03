@@ -27,7 +27,7 @@ public:
 
 class Solution_2 {
 public:
-    // A simulation for the real trade. If you sell in day i, you mustn't buy until day i+1
+    // A simulation for the real trade. If you sell in day i, you cannot buy until day i+1.
     int maxProfit (vector<int> &prices) {
         int max_profit = 0;
 
