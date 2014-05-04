@@ -16,8 +16,6 @@ public:
         stack<int> opnd;
 
         for (vector<string>::iterator iv = tokens.begin(); iv != tokens.end(); ++iv ) {
-            int a, b;
-
             if (*iv == "+" || *iv == "-" || *iv == "*" || *iv == "/") {
                 int a = opnd.top();
                 opnd.pop();
