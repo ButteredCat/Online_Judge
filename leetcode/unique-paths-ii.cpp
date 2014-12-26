@@ -25,7 +25,7 @@ private:
     const int OBSTACLE = 1;
     const int EMPTY = 0;
 public:
-	// space complexity O(m*n), there is a better implementation with space complexity O(n)
+    // space complexity O(m*n), there is a better implementation with space complexity O(n)
     int uniquePathsWithObstacles (vector<vector<int> > &obstacleGrid) {
         vector<vector<int> > grid (obstacleGrid.size(), vector<int> (obstacleGrid[0].size(), 0) );
 

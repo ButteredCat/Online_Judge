@@ -23,7 +23,7 @@ public:
         if(carry==1) {
             digits.insert(digits.begin(),carry);
         }
-        
+
         return digits;
     }
 };
